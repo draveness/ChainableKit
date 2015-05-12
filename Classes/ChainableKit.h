@@ -42,5 +42,19 @@
 - (ChainableKit *)with;
 - (ChainableKit *)and;
 
+@end
+
+
+@interface ChainableKit (UILabel)
+
+- (ChainableString)text;
+- (ChainableFont)font;
+- (ChainableColor)textColor;
+- (ChainableColor)shadowColor;
+- (ChainableInteger)textAlignment;
+- (ChainableInteger)lineBreakMode;
+- (ChainableAttributedString)attributedText;
+- (ChainableInteger)numberOfLines;
 
 @end
+

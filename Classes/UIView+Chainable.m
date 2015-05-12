@@ -11,13 +11,13 @@
 
 @implementation UIView (Chainable)
 
-- (ChainableKit *)chainable {
+- (ChainableKit *)make {
     ChainableKit *chainable = [[ChainableKit alloc] init];
     chainable.view = self;
     return chainable;
 }
 
-+ (ChainableKit *)chainable {
++ (ChainableKit *)make {
     ChainableKit *chainable = [[ChainableKit alloc] init];
     UIView *view = [[self alloc] init];
     chainable.view = view;

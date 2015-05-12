@@ -17,11 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.chainable.backgroundColor([UIColor whiteColor]);
-    UIView *view = [[UIView alloc] init];
+    self.view.make.backgroundColor([UIColor whiteColor]);
     UIColor *blue = [UIColor blueColor];
-    view.chainable.backgroundColor(blue).frame(190, 100, 30, 30).alpha(0.5).origin(19, 19).addToSuperview(self.view);
-    UIView.chainable.backgroundColor(blue).frame(190, 100, 30, 30).addToSuperview(self.view);
+    UIColor *red = [UIColor redColor];
+    UILabel.make
+        .backgroundColor(red)
+        .frame(100, 100, 100, 100)
+        .textAlignment(NSTextAlignmentCenter)
+        .textColor(blue)
+        .text(@"Hello World")
+        .lineBreakMode(NSLineBreakByClipping)
+        .numberOfLines(0)
+        .addToSuperview(self.view);
+
 }
 
 @end

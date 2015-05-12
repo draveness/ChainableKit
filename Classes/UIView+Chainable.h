@@ -11,7 +11,7 @@
 
 @interface UIView (Chainable)
 
-- (ChainableKit *)chainable;
-+ (ChainableKit *)chainable;
+- (ChainableKit *)make;
++ (ChainableKit *)make;
 
 @end
