@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIView+Chainable.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.view.chainable.backgroundColor([UIColor whiteColor]);
+    UIView *view = [[UIView alloc] init];
+    UIColor *blue = [UIColor blueColor];
+    view.chainable.backgroundColor(blue).frame(190, 100, 30, 30).alpha(0.5).origin(19, 19).addToSuperview(self.view);
+    UIView.chainable.backgroundColor(blue).frame(190, 100, 30, 30).addToSuperview(self.view);
 }
 
 @end

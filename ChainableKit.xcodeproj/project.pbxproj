@@ -14,6 +14,8 @@
 		186F56031B01FDF000C96986 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186F56021B01FDF000C96986 /* Images.xcassets */; };
 		186F56061B01FDF000C96986 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186F56041B01FDF000C96986 /* LaunchScreen.xib */; };
 		186F56121B01FDF100C96986 /* ChainableKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F56111B01FDF100C96986 /* ChainableKitTests.m */; };
+		186F561E1B01FE3800C96986 /* UIView+Chainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F561D1B01FE3800C96986 /* UIView+Chainable.m */; };
+		186F56251B02003C00C96986 /* ChainableKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F56241B02003C00C96986 /* ChainableKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		186F560B1B01FDF100C96986 /* ChainableKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainableKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		186F56101B01FDF100C96986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		186F56111B01FDF100C96986 /* ChainableKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainableKitTests.m; sourceTree = "<group>"; };
+		186F561C1B01FE3800C96986 /* UIView+Chainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Chainable.h"; sourceTree = "<group>"; };
+		186F561D1B01FE3800C96986 /* UIView+Chainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Chainable.m"; sourceTree = "<group>"; };
+		186F561F1B01FF6600C96986 /* ChainableBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainableBlock.h; sourceTree = "<group>"; };
+		186F56231B02003C00C96986 /* ChainableKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainableKit.h; sourceTree = "<group>"; };
+		186F56241B02003C00C96986 /* ChainableKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChainableKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 		186F55F41B01FDF000C96986 /* ChainableKit */ = {
 			isa = PBXGroup;
 			children = (
+				186F561B1B01FE1600C96986 /* Classes */,
 				186F55F91B01FDF000C96986 /* AppDelegate.h */,
 				186F55FA1B01FDF000C96986 /* AppDelegate.m */,
 				186F55FC1B01FDF000C96986 /* ViewController.h */,
@@ -118,6 +126,18 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		186F561B1B01FE1600C96986 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				186F561C1B01FE3800C96986 /* UIView+Chainable.h */,
+				186F561D1B01FE3800C96986 /* UIView+Chainable.m */,
+				186F561F1B01FF6600C96986 /* ChainableBlock.h */,
+				186F56231B02003C00C96986 /* ChainableKit.h */,
+				186F56241B02003C00C96986 /* ChainableKit.m */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -219,8 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186F561E1B01FE3800C96986 /* UIView+Chainable.m in Sources */,
 				186F55FE1B01FDF000C96986 /* ViewController.m in Sources */,
 				186F55FB1B01FDF000C96986 /* AppDelegate.m in Sources */,
+				186F56251B02003C00C96986 /* ChainableKit.m in Sources */,
 				186F55F81B01FDF000C96986 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
