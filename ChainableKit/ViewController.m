@@ -22,7 +22,6 @@
     UIColor *red = [UIColor redColor];
     UILabel.make
     .backgroundColor(red)
-    .frame(100, 100, 100, 100)
     .textAlignment(NSTextAlignmentCenter)
     .lineBreakMode(NSLineBreakByClipping)
     .textColor(blue)
