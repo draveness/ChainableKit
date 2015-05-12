@@ -41,6 +41,7 @@
 // Helper
 - (ChainableKit *)with;
 - (ChainableKit *)and;
+- (ChainableInteger)tag;
 
 @end
 

@@ -190,6 +190,14 @@
     return self;
 }
 
+- (ChainableInteger)tag {
+    __weak ChainableKit *weakSelf = self;
+    return ChainableInteger(tag) {
+        weakSelf.view.tag = tag;
+        return weakSelf;
+    };
+}
+
 @end
 
 @implementation ChainableKit (UILabel)

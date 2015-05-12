@@ -21,7 +21,6 @@ typedef ChainableKit* (^ChainableString)(NSString *string);
 typedef ChainableKit* (^ChainableAttributedString)(NSAttributedString *attributedText);
 #define ChainableAttributedString(attributedText) ^ChainableKit* (NSAttributedString *attributedText)
 
-
 typedef ChainableKit* (^ChainableFont)(UIFont *font);
 #define ChainableFont(font) ^ChainableKit* (UIFont *font)
 

@@ -21,14 +21,14 @@
     UIColor *blue = [UIColor blueColor];
     UIColor *red = [UIColor redColor];
     UILabel.make
-        .backgroundColor(red)
-        .frame(100, 100, 100, 100)
-        .textAlignment(NSTextAlignmentCenter)
-        .textColor(blue)
-        .text(@"Hello World")
-        .lineBreakMode(NSLineBreakByClipping)
-        .numberOfLines(0)
-        .addToSuperview(self.view);
+    .backgroundColor(red)
+    .frame(100, 100, 100, 100)
+    .textAlignment(NSTextAlignmentCenter)
+    .lineBreakMode(NSLineBreakByClipping)
+    .textColor(blue)
+    .numberOfLines(0)
+    .text(@"Hello World")
+    .addToSuperview(self.view);
 
 }
 
