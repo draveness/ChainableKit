@@ -33,6 +33,16 @@ UILabel.make
     .textAlignment(NSTextAlignmentCenter)
 ```
 
+You can get the UIKit components back with view method.
+
+```
+UILabel *label = UILabel.make
+					.backgroundColor(red)
+					.textAlignment(NSTextAlignmentCenter)
+					.view;
+```
+
+
 # Contact
 
 - Powered by [Draveness](http://github.com/draveness)
