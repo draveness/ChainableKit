@@ -1,5 +1,5 @@
 # ChainableKit
-ChainableKit is a convience way to set up UIKit component with chainable syntax.
+ChainableKit is a convience way to set up UIKit component with chainable syntax. This framework is inspired by [Masonry](https://github.com/SnapKit/Masonry) and [JHChainableAnimations](https://github.com/jhurray/JHChainableAnim).
 
 ![Version](https://img.shields.io/badge/Pod-%20v0.1.0%20-or.svg)
 [![Build Status](https://travis-ci.org/Draveness/ChainableKit.svg?branch=master)](https://travis-ci.org/Draveness/ChainableKit)

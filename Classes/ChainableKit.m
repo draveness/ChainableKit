@@ -205,80 +205,72 @@
 #pragma mark - UILabel
 
 - (ChainableString)text {
-    NSAssert([self.view isKindOfClass:[UILabel class]], @"text can only be assigned to UILabel and its subclasses.");
     __weak ChainableKit *weakSelf = self;
     return ChainableString(text) {
-        if ([weakSelf.view isKindOfClass:[UILabel class]])
+        if ([weakSelf.view respondsToSelector:@selector(text)])
             ((UILabel*)(weakSelf.view)).text = text;
         return weakSelf;
     };
 }
 
 - (ChainableFont)font {
-    NSAssert([self.view isKindOfClass:[UILabel class]], @"font can only be assigned to UILabel and its subclasses.");
     __weak ChainableKit *weakSelf = self;
     return ChainableFont(font) {
-        if ([weakSelf.view isKindOfClass:[UILabel class]])
+        if ([weakSelf.view respondsToSelector:@selector(font)])
             ((UILabel*)(weakSelf.view)).font = font;
         return weakSelf;
     };
 }
 
 - (ChainableColor)textColor {
-    NSAssert([self.view isKindOfClass:[UILabel class]], @"textColor can only be assigned to UILabel and its subclasses.");
     __weak ChainableKit *weakSelf = self;
     return ChainableColor(textColor) {
-        if ([weakSelf.view isKindOfClass:[UILabel class]])
+        if ([weakSelf.view respondsToSelector:@selector(textColor)])
             ((UILabel*)(weakSelf.view)).textColor = textColor;
         return weakSelf;
     };
 }
 
 - (ChainableInteger)numberOfLines {
-    NSAssert([self.view isKindOfClass:[UILabel class]], @"numberOfLines can only be assigned to UILabel and its subclasses.");
     __weak ChainableKit *weakSelf = self;
     return ChainableInteger(numberOfLines) {
-        if ([weakSelf.view isKindOfClass:[UILabel class]])
+        if ([weakSelf.view respondsToSelector:@selector(numberOfLines)])
             ((UILabel*)(weakSelf.view)).numberOfLines = numberOfLines;
         return weakSelf;
     };
 }
 
 - (ChainableColor)shadowColor {
-    NSAssert([self.view isKindOfClass:[UILabel class]], @"shadowColor can only be assigned to UILabel and its subclasses.");
     __weak ChainableKit *weakSelf = self;
     return ChainableColor(shadowColor) {
-        if ([weakSelf.view isKindOfClass:[UILabel class]])
+        if ([weakSelf.view respondsToSelector:@selector(shadowColor)])
             ((UILabel*)(weakSelf.view)).shadowColor = shadowColor;
         return weakSelf;
     };
 }
 
 - (ChainableInteger)textAlignment {
-    NSAssert([self.view isKindOfClass:[UILabel class]], @"textAlignment can only be assigned to UILabel and its subclasses.");
     __weak ChainableKit *weakSelf = self;
     return ChainableInteger(textAlignment) {
-        if ([weakSelf.view isKindOfClass:[UILabel class]])
+        if ([weakSelf.view respondsToSelector:@selector(textAlignment)])
             ((UILabel*)(weakSelf.view)).textAlignment = textAlignment;
         return weakSelf;
     };
 }
 
 - (ChainableInteger)lineBreakMode {
-    NSAssert([self.view isKindOfClass:[UILabel class]], @"lineBreakMode can only be assigned to UILabel and its subclasses.");
     __weak ChainableKit *weakSelf = self;
     return ChainableInteger(lineBreakMode) {
-        if ([weakSelf.view isKindOfClass:[UILabel class]])
+        if ([weakSelf.view respondsToSelector:@selector(lineBreakMode)])
             ((UILabel*)(weakSelf.view)).lineBreakMode = lineBreakMode;
         return weakSelf;
     };
 }
 
 - (ChainableAttributedString)attributedText {
-    NSAssert([self.view isKindOfClass:[UILabel class]], @"attributedText can only be assigned to UILabel and its subclasses.");
     __weak ChainableKit *weakSelf = self;
     return ChainableAttributedString(attributedText) {
-        if ([weakSelf.view isKindOfClass:[UILabel class]])
+        if ([weakSelf.view respondsToSelector:@selector(attributedText)])
             ((UILabel*)(weakSelf.view)).attributedText = attributedText;
         return weakSelf;
     };
